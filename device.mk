@@ -38,7 +38,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.svn=23
 
-
 # Enforce privapp-permissions whitelist
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.control_privapp_permissions=disable
@@ -251,6 +250,10 @@ else
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 endif
+
+# Native video calling
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.vt_avail_ovr=1
 
 # Native video calling
 PRODUCT_PROPERTY_OVERRIDES += \
