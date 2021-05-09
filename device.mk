@@ -806,6 +806,10 @@ PRODUCT_PACKAGES += \
 # Setting vendor SPL
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
+# Parts
+PRODUCT_PACKAGES += \
+    GoogleParts
+
 # IORap app launch prefetching using Perfetto traces and madvise
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.iorapd.enable=true
