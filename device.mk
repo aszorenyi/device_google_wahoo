@@ -728,6 +728,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.protected_contents=true
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=skiavk
 
+# Shared java libs
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras
+
 # Use /product/etc/fstab.postinstall to mount system_other.
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.postinstall.fstab.prefix=/product
